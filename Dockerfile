@@ -1,4 +1,4 @@
-FROM openjdk:19-alpine
+FROM openjdk:latest
 
 WORKDIR /usr/Jmusic
 
