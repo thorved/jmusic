@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  nginx:
+    image: thorved/jmusic:latest
+    container_name: jmusic
+    restart: unless-stopped
+    volumes:
+      - ./config.txt:/usr/Jmusic/config.txt
