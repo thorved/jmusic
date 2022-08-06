@@ -23,8 +23,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: jmusic
-          file: Dockerfile
+          context: .
+          file: ./Dockerfile
           platforms: linux/arm64/v8,linux/amd64
           push: true
-          tags: thorved/jmusic:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/jmusic:latest
